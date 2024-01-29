@@ -1,4 +1,4 @@
-#!/bin.bash
+#!/bin/bash
 #$ -cwd                 # workingDirectory
 #$ -j y
 #$ -N Treno
