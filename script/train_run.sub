@@ -1,9 +1,12 @@
 #!/bin/bash
-#$ -V
+#$ -cwd                 # workingDirectory
+#$ -j y
+#$ -N Treno
+#$ -S /bin/bash
+#$ -q all.q                  # queueName
+#$ -pe mpi 40           # cpuNumber
+#$ -l h_rt=48:00:00
 
-#PBS -S /bin/bash
-#PBS -l nodes=1:ppn=16,mem=5g,walltime=12:00:00
-#PBS -N freight_train
 
 
 cd /home/meccanica/abrunelli/Train_2
