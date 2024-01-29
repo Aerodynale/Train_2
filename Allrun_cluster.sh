@@ -9,7 +9,7 @@
 
 
 # #!/bin/bash
-
+localDir='/home/meccanica/abrunelli/Train'
 #Train case OpenFOAM
 mkdir -p logs
 cp -r 0.orig 0
