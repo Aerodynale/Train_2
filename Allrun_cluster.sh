@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/bin.bash
 #$ -cwd                 # workingDirectory
 #$ -j y
 #$ -N Treno
 #$ -S /bin/bash
 #$ -q all.q                  # queueName
 #$ -pe mpi 32           # cpuNumber
-#$ -l h_rt=48:00:00
+#$ -l h_rt=10:00:00
 
 
 # #!/bin/bash
