@@ -9,7 +9,5 @@
 
 
 
-cd /home/meccanica/abrunelli/Train_2
 chmod +x Allrun_cluster
-#sort ${PBS_NODEFILE} | uniq -c | awk '{ printf("%s\n", $2); }' > /home/meccanica/abrunelli/mpd.nodes
 time ./Allrun_cluster > /home/meccanica/abrunelli/Train_2/output.txt
