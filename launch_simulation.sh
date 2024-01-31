@@ -34,6 +34,6 @@ cp -r 0.orig 0
 decomposePar > logs/09_decomposePar_secondaIterazione.log 2>&1
 mpirun --hostfile machinefile.$JOB_ID -np 32 potentialFoam -parallel > logs/10_potentialFoam.log 2>&1
 mpirun --hostfile machinefile.$JOB_ID -np 32 simpleFoam -parallel > logs/11_simpleFoam.log 2>&1
-reconstructPar > logs/10_reconstructPar.log 2>&1
+reconstructPar > logs/12_reconstructPar.log 2>&1
 
 touch train.foam
