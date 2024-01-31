@@ -24,13 +24,13 @@ topoSet > logs/05_topoSet.log 2>&1
 createPatch -overwrite > logs/06_createPatch.log 2>&1
 reconstructParMesh -constant > logs/07_reconstruct.log 2>&1
 rm -rf processor*
-checkMesh -overwrite > logs/08_checkMesh.log 2>&1
+checkMesh > logs/08_checkMesh.log 2>&1
 
 # run the simulation rm -r 0
 rm -rf processor*
 rm -r 0
 cp -r 0.orig 0
-renumberMesh > logs/09_renumberMesh.log 2>&1
+renumberMesh -overwrite > logs/09_renumberMesh.log 2>&1
 decomposePar > logs/10_decomposePar_secondaIterazione.log 2>&1
 mpirun --hostfile machinefile.$JOB_ID -np 32 potentialFoam -parallel > logs/11_potentialFoam.log 2>&1
 mpirun --hostfile machinefile.$JOB_ID -np 32 simpleFoam -parallel > logs/12_simpleFoam.log 2>&1
