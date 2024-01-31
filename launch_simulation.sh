@@ -38,3 +38,4 @@ reconstructParMesh -constant > logs/12_reconstructParMesh.log 2>&1
 reconstructPar > logs/13_reconstructPar.log 2>&1
 
 touch train.foams
+
