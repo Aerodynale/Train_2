@@ -1,7 +1,7 @@
 #!/bin.bash
 #$ -cwd                 # workingDirectory
 #$ -j y
-#$ -N Treno
+#$ -N Simulazione2
 #$ -S /bin/bash
 #$ -q all.q                 # queueName
 #$ -pe mpi 32        # cpuNumber
