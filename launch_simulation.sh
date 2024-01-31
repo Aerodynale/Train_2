@@ -30,12 +30,12 @@ checkMesh > logs/08_checkMesh.log 2>&1
 rm -rf processor*
 rm -r 0
 cp -r 0.orig 0
-# renumberMesh > logs/005_renumberMesh.log 2>&1
-decomposePar > logs/09_decomposePar_secondaIterazione.log 2>&1
-mpirun --hostfile machinefile.$JOB_ID -np 32 potentialFoam -parallel > logs/10_potentialFoam.log 2>&1
-mpirun --hostfile machinefile.$JOB_ID -np 32 simpleFoam -parallel > logs/11_simpleFoam.log 2>&1
-reconstructParMesh -constant > logs/12_reconstructParMesh.log 2>&1
-reconstructPar -latestTime > logs/13_reconstructPar.log 2>&1
+renumberMesh > logs/09_renumberMesh.log 2>&1
+decomposePar > logs/10_decomposePar_secondaIterazione.log 2>&1
+mpirun --hostfile machinefile.$JOB_ID -np 32 potentialFoam -parallel > logs/11_potentialFoam.log 2>&1
+mpirun --hostfile machinefile.$JOB_ID -np 32 simpleFoam -parallel > logs/12_simpleFoam.log 2>&1
+reconstructParMesh -constant > logs/13_reconstructParMesh.log 2>&1
+reconstructPar -latestTime > logs/14_reconstructPar.log 2>&1
 
 touch train.foam
 
