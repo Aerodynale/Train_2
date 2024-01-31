@@ -21,7 +21,7 @@ blockMesh > logs/02_blockMesh.log 2>&1
 decomposePar > logs/03_decompose.log 2>&1
 mpirun --hostfile machinefile.$JOB_ID -np 32 snappyHexMesh -parallel -overwrite > logs/04_snappyHexMesh.log 2>&1
 topoSet > logs/05_topoSet.log 2>&1
-createPatch > logs/06_createPatch.log 2>&1
+createPatch -overwrite > logs/06_createPatch.log 2>&1
 reconstructParMesh -constant > logs/07_reconstruct.log 2>&1
 rm -rf processor*
 checkMesh > logs/08_checkMesh.log 2>&1
@@ -35,7 +35,7 @@ decomposePar > logs/09_decomposePar_secondaIterazione.log 2>&1
 mpirun --hostfile machinefile.$JOB_ID -np 32 potentialFoam -parallel > logs/10_potentialFoam.log 2>&1
 mpirun --hostfile machinefile.$JOB_ID -np 32 simpleFoam -parallel > logs/11_simpleFoam.log 2>&1
 reconstructParMesh -constant > logs/12_reconstructParMesh.log 2>&1
-reconstructPar > logs/13_reconstructPar.log 2>&1
+reconstructPar -latestTime > logs/13_reconstructPar.log 2>&1
 
 touch train.foam
 
