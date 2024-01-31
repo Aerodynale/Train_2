@@ -4,7 +4,7 @@
 #$ -N Treno
 #$ -S /bin/bash
 #$ -q all.q                 # queueName
-#$ -pe mpi 16        # cpuNumber
+#$ -pe mpi 32        # cpuNumber
 #$ -l h_rt=03:00:00
 
 module use /software/spack/spack/share/spack/modules/linux-rocky8-sandybridge/
