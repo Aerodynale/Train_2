@@ -37,5 +37,5 @@ mpirun --hostfile machinefile.$JOB_ID -np 32 simpleFoam -parallel > logs/11_simp
 reconstructParMesh -constant > logs/12_reconstructParMesh.log 2>&1
 reconstructPar > logs/13_reconstructPar.log 2>&1
 
-touch train.foams
+touch train.foam
 
