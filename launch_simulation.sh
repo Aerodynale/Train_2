@@ -24,7 +24,7 @@ topoSet > logs/05_topoSet.log 2>&1
 createPatch -overwrite > logs/06_createPatch.log 2>&1
 reconstructParMesh -constant > logs/07_reconstruct.log 2>&1
 rm -rf processor*
-checkMesh > logs/08_checkMesh.log 2>&1
+checkMesh -overwrite > logs/08_checkMesh.log 2>&1
 
 # run the simulation rm -r 0
 rm -rf processor*
