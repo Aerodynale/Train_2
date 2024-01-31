@@ -11,7 +11,7 @@ module use /software/spack/spack/share/spack/modules/linux-rocky8-sandybridge/
 module load openfoam
 
 # #!/bin/bash
-localDir='/home/meccanica/abrunelli/Train_2'
+localDir='/global-scratch/abrunelli/Train_2'
 #Train case OpenFOAM
 mkdir -p logs
 cp -r 0.orig 0
