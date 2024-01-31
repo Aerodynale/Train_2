@@ -3,9 +3,9 @@
 #$ -j y
 #$ -N Treno
 #$ -S /bin/bash
-#$ -q all.q@n0003                  # queueName
-#$ -pe mpi 1        # cpuNumber
-#$ -l h_rt=00:02:00
+#$ -q all.q                 # queueName
+#$ -pe mpi 16        # cpuNumber
+#$ -l h_rt=03:00:00
 
 
 
