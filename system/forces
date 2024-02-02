@@ -29,7 +29,7 @@ forces1
     Aref            0.00895;        // Estimated
 }
 
-
+/*
 binField1
 {
     type                    binField;
@@ -48,7 +48,7 @@ binField1
     }
     writeControl            timeStep;
 }
-
+*/
 
 
 // ************************************************************************* //
