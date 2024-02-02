@@ -6,6 +6,8 @@
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 
+# include "../0.orig/include/angulationParameters"
+
 forces1
 {
     type            forces;
