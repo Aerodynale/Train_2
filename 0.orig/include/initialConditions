@@ -5,6 +5,7 @@
 |   \\  /    A nd           | Website:  www.openfoam.com                      |
 |    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
+
 #include  "angulationParameters"
 
 flowVelocity         ($x_velocity $y_velocity 0);
