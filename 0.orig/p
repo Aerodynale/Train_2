@@ -13,7 +13,7 @@ FoamFile
     object      p;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-
+//#include       "include/angulationParameters"
 #include        "include/initialConditions"
 
 
@@ -35,18 +35,6 @@ boundaryField
         type            fixedValue;
         value           $internalField;
     }
-    front
-    {
-
-        type            symmetryPlane;
-        value           uniform 0;
-    }
-    back
-    {
-
-        type            symmetryPlane;
-        value           uniform 0;
-    }
     upperWall
     {
         type            symmetryPlane;
@@ -62,9 +50,8 @@ boundaryField
     {
         type            zeroGradient;
     }
-
-    //#include "include/frontBackUpperPatches"
 }
+    //#include "include/frontBackUpperPatches"
 
 
 // ************************************************************************* //

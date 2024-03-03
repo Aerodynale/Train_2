@@ -15,7 +15,7 @@ FoamFile
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
 #include        "include/initialConditions"
-
+//#include          "include/angulationParameters"
 
 dimensions      [0 2 -2 0 0 0 0];
 
@@ -34,14 +34,7 @@ boundaryField
         inletValue      $internalField;
         value           $internalField;
     }
-    front
-    {
-       type            symmetryPlane;
-    }
-    back
-    {
-       type            symmetryPlane;
-    }
+    
     upperWall
     {
          type            symmetryPlane;

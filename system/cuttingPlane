@@ -10,7 +10,12 @@ cuttingPlane
 {
     type            surfaces;
     libs            (sampling);
-    writeControl    writeTime;
+    timeStart               0;
+    timeEnd                 800;
+    executeControl          timeStep;
+    executeInterval         200;
+    writeControl            timeStep;
+    writeInterval           200;
 
     surfaceFormat   vtk;
     fields          ( p U );
@@ -22,8 +27,44 @@ cuttingPlane
         yNormal
         {
             type        cuttingPlane;
-            point       (0 0 0);
+            point       (0 0.001 0);
             normal      (0 1 0);
+            interpolate true;
+        }
+
+        zNormal
+        {
+            type        cuttingPlane;
+            point       (2.5 0 0.085);
+            normal      (0 0 1);
+            interpolate true;
+        }
+        zNormal2
+        {
+            type        cuttingPlane;
+            point       (2.5 0 0.111);
+            normal      (0 0 1);
+            interpolate true;
+        }
+        zNormal3
+        {
+            type        cuttingPlane;
+            point       (2.5 0 0.075);
+            normal      (0 0 1);
+            interpolate true;
+        }
+        zNormal4
+        {
+            type        cuttingPlane;
+            point       (2.5 0 0.055);
+            normal      (0 0 1);
+            interpolate true;
+        }
+        zNormal5
+        {
+            type        cuttingPlane;
+            point       (2.5 0 0.045);
+            normal      (0 0 1);
             interpolate true;
         }
     }

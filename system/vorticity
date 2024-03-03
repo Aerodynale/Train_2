@@ -19,11 +19,11 @@ vorticity1
     enabled         true;
     log             true;
     timeStart       0;
-    timeEnd         1000;
+    timeEnd         800;
     executeControl  timeStep;
-    executeInterval 1000;
+    executeInterval 800;
     writeControl    timeStep;
-    writeInterval   1000;
+    writeInterval   800;
 }
 
 

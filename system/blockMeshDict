@@ -39,23 +39,7 @@ edges
 
 boundary
 (
-    front
-    {
-        type symmetryPlane;
-        faces
-        (
-            (3 7 6 2)
-            
-        );
-    }
-    back
-    {
-        type symmetryPlane;
-        faces
-        (
-             (1 5 4 0)
-        );
-    }
+   
 
     inlet
     {
@@ -63,6 +47,7 @@ boundary
         faces
         (
             (0 4 7 3)
+            (1 5 4 0)
         );
     }
     outlet
@@ -71,6 +56,7 @@ boundary
         faces
         (
             (2 6 5 1)
+            (3 7 6 2)
         );
     }
     lowerWall
